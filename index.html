@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Три цвета</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .section {
+      width: 100%;
+      padding: 50px 20px;
+    }
+
+    /* Анимация fade-in */
+    @key
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Анимация масштабирования */
+    @keyframes scaleUp {
+      from {
+        transform: scale(0.9);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    /* Анимация для логотипа */
+    .logo {
+      animation: fadeIn 2s ease-in-out, scaleUp 2s ease-in-out;
+    }
+
+    /* Анимация для кнопки */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background-color: #555;
+    }
+
+    /* Анимация для секций */
+    .section1, .section2, .section3, .section4, .section5 {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .circle img {
+      display: block;
+      margin: 0 auto;
+      animation: scaleUp 2s ease-in-out infinite alternate;
+    }
+
+    /* Анимация текста */
+    h1 span, h3, p {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Анимация для видео */
+    #myVideo {
+      display: block;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Анимация для отзывов */
+    .review {
+      animation: scaleUp 1.5s ease-in-out;
+      transition: transform 0.3s ease;
+    }
+
+    .review:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="section section1">
+    <header class="header">
+      <div class="logo">Negro Saites</div>
+      <nav>
+        <ul class="nav">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="lomo">START GUIDE FOR BEGINNER<br></div>
+        <div class="lomrro">DESIGN</div>
+        <div class="aidun">
+          <p align="left">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Magni quo aliquid, sequi magnam distinctio iure doloremque<br> quibusdam reiciendis dicta voluptatum tempore nihil <br>quas commodi blanditiis, aut aliquam ipsa ipsam nulla.</p>
+          <button class="btn">NEGRO</button>
+        </div>
+      </nav>
+    </header>
+    
+  
+  </div>
+  <footer class="footer">
+    <div><strong>+150</strong> Happy Students</div>
+    <div><strong>+50</strong> Certified Courses</div>
+    <div><strong>+1000</strong> Awards Received</div>
+</footer>
+  <div class="circle"><img class="lox" src="sss.png" width="600"></div>
+  
+  <div class="section section2">
+    <div class="container">
+      <div class="header">
+        <h1>FIND <span>Your Course.</span></h1>
+        <span>Edition 2022</span>
+      </div>
+      <div class="courses">
+        <div class="course">
+          <h2>COURSE 01</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">View More</a>
+        </div>
+        <div class="course">
+          <h2>COURSE 02</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">View More</a>
+        </div>
+        <div class="course">
+          <h2>COURSE 03</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">View More</a>
+        </div>
+        <div class="course">
+          <h2>COURSE 04</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section3">
+    <video id="myVideo" controls>
+      <source src="black.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="section section4">
+    <div class="container">
+      <div class="header">    
+        <h1>WHAT <span>users think.</span></h1>
+      </div>
+      <div class="reviews">
+        <div class="review">
+          <img src="chel.jpg" alt="User 1">
+          <h3>LAURA SMITH</h3>
+          <div class="stars">★★★★★</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet justo vel metus.</p>
+        </div>
+        <div class="review">
+          <img src="chem.jpeg" alt="User 2">
+          <h3>JOHN SMITH</h3>
+          <div class="stars">★★★★★</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet justo vel metus.</p>
+        </div>
+        <div class="review">
+          <img src="mem.jpg" alt="User 3">
+          <h3>SARA SMITH</h3>
+          <div class="stars">★★★★★</div>
+          <p>Lorem ipsum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section5">
+    <div class="form-section" style="background: #d493ff; padding: 40px; text-align: center;">
+      <h2 style="color: #6a0dad; margin-bottom: 20px;">Регистрация</h2>
+      <form style="max-width: 500px; margin: 0 auto;">
+        <input 
+          type="text" 
+          placeholder="Ваше имя" 
+          required 
+          style="width: 100%; padding: 10px; margin: 10px 0; border: 2px solid #6a0dad; border-radius: 5px; outline: none; box-shadow: 0 3px 10px rgba(106, 13, 173, 0.2);">
+        <input 
+          type="email" 
+          placeholder="Ваш email" 
+          required 
+          style="width: 100%; padding: 10px; margin: 10px 0; border: 2px solid #6a0dad; border-radius: 5px; outline: none; box-shadow: 0 3px 10px rgba(106, 13, 173, 0.2);">
+        <input 
+          type="password" 
+          placeholder="Придумайте пароль" 
+          required 
+          style="width: 100%; padding: 10px; margin: 10px 0; border: 2px solid #6a0dad; border-radius: 5px; outline: none; box-shadow: 0 3px 10px rgba(149, 0, 255, 0.2);">
+        <button 
+          type="submit" 
+          style="width: 100%; padding: 10px; margin: 10px 0; background-color: #6a0dad; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 16px; transition: background-color 0.3s ease;">
+          Зарегистрироваться
+        </button>
+      </form>
+    </div>
+  </div>
+  <footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <div>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+    <div>
+        <a href="/privacy-policy" style="color: #ccc; text-decoration: none;">Privacy Policy</a> | 
+        <a href="/terms-of-service" style="color: #ccc; text-decoration: none;">Terms of Service</a>
+    </div>
+    <div>
+        <p>Follow us:</p>
+        <a href="https://facebook.com" style="color: #ccc; margin-right: 10px; text-decoration: none;">Facebook</a>
+        <a href="https://twitter.com" style="color: #ccc; margin-right: 10px; text-decoration: none;">Twitter</a>
+        <a href="https://instagram.com" style="color: #ccc; text-decoration: none;">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>
